@@ -20,6 +20,7 @@ class VersionableModel extends Model
     {
         return 'table';
     }
+
     public function indexableAs()
     {
         return 'table_v2';

@@ -300,7 +300,7 @@ trait Searchable
     }
 
     /**
-     * Get the index name for the model when searching
+     * Get the index name for the model when searching.
      *
      * @return string
      */
@@ -310,7 +310,7 @@ trait Searchable
     }
 
     /**
-     * Get the index name for the model when indexing
+     * Get the index name for the model when indexing.
      *
      * @return string
      */

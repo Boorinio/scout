@@ -153,6 +153,7 @@ class MeilisearchSearchableTest extends TestCase
             20 => 'Prof. Larry Prosacco DVM',
         ], $page2->pluck('name', 'id')->all());
     }
+
     public function test_uses_different_indexes()
     {
         $client = m::mock(Client::class);
