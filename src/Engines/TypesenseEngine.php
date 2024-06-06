@@ -496,8 +496,9 @@ class TypesenseEngine extends Engine
      */
     protected function getOrCreateCollectionFromModel($model, bool $indexOperation = true): TypesenseCollection
     {
-        $operation = $indexOperation ? 'indexableAs' : 'searchableAs';
-        $collection = $this->typesense->getCollections()->{$model->{$operation}()};
+        $method = $indexOperation ? 'indexableAs' : 'searchableAs';
+
+        $collection = $this->typesense->getCollections()->{$model->{$method}()};
 
         if ($collection->exists() === true) {
             return $collection;

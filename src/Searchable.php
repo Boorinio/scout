@@ -316,7 +316,7 @@ trait Searchable
      */
     public function indexableAs()
     {
-        return config('scout.prefix').$this->getTable();
+        return $this->searchableAs();
     }
 
     /**
