@@ -2,8 +2,9 @@
 
 ## Upgrading To 11.0 From 10.x
 
-### Removal Of `numericFilters` for algolia
-In Scout 10.x, algolia driver used the `numericFilters` which caused whereIn statements and simple string matches to not work which is inconsistent with the rest of the engines. In 11.x it has been replaced by `filters` in order to support these flows natively.
+### Algolia Engine `filters`
+
+In previous Scout releases, the Algolia engine utilized `numericFilters` to power `where` conditions. However, `numericFilters` does not support simple string matching. In Scout 11.x, `filters` is now used instead of `numericFilters`.
 
 ## Upgrading To 10.0 From 9.x
 
